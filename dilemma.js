@@ -12,15 +12,15 @@ function result(choice){
 	const partner = Math.floor(Math.random()*2);
   const divEl = document.getElementById("result");
   if (choice === 1 && partner === 1){
-  	divEl.innerHTML = "<p>Your partner confessed! You both go to prison for two years.</p>";
+  	divEl.innerHTML = '<p>Your partner confessed! You both go to prison for two years.</p><img src="prison2.jpg">';
   }
   else if (choice === 0 && partner === 1){
-  	divEl.innerHTML = "<p>Your partner confessed! You go to prison for three years and your partner goes free.</p>";
+  	divEl.innerHTML = '<p>Your partner confessed! You go to prison for three years and your partner goes free.</p><img src="prison1.jpg">';
   }
   else if (choice === 0 && partner === 0){
-  	divEl.innerHTML = "<p>Your partner refused! You both go to prison for one year.</p>";
+  	divEl.innerHTML = '<p>Your partner refused! You both go to prison for one year.</p><img src="prison2.jpg">';
   }
   else{
-  	divEl.innerHTML = "<p>Your partner refused! You go free! Your partner goes to prison for three years.</p>"
+  	divEl.innerHTML = '<p>Your partner refused! You go free! Your partner goes to prison for three years.</p><img src="freedom.jpg">';
   }
 }
