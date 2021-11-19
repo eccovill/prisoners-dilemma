@@ -6,7 +6,7 @@ function confess(){
 function refuse(){
 	const divEl = document.getElementById("options");
   document.getElementById("result").innerHTML = "";
-  divEl.innerHTML = '<p>You have chosen to <b>refuse</b> to confess.</p><p>If your partner <b>refuses</b> to confess, you serve 1 year. If your partner <b>confesses</b>, you will serve 3 years.</p><button type="button" onclick="Javascript:result(0)">Get Result</button>';
+  divEl.innerHTML = '<p>You have chosen to <b>refuse</b> to confess.</p><p>If your partner <b>refuses</b> to confess, you will serve 1 year. If your partner <b>confesses</b>, you will serve 3 years.</p><button type="button" onclick="Javascript:result(0)">Get Result</button>';
 }
 function result(choice){
 	const partner = Math.floor(Math.random()*2);
